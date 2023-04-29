@@ -5,6 +5,7 @@ body,
   margin: 0;
   height: 100%;
   width: 100%;
+  font-family: 'Prompt', sans-serif;
 }
 
 .esri-widget--button {
@@ -24,15 +25,16 @@ body,
 .sassy-theme .esri-button,
 .sassy-theme .esri-input,
 .sassy-theme .esri-widget a {
-  background-color: #2C5524;
+  background-color: #81933d;
   color: #fff;
+  font-family: 'Prompt', sans-serif;
 }
 
 .sassy-theme .esri-widget--button:focus,
 .sassy-theme .esri-widget--button:hover,
 .sassy-theme .esri-menu li:focus,
 .sassy-theme .esri-menu li:hover {
-  background-color: #2C5524;
+  background-color: #81933d;
   color: #fff;
 }
 

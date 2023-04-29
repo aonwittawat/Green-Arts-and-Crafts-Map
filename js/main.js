@@ -115,13 +115,13 @@ require([
     labelingInfo: [{
       symbol: {
         type: "text",
-        color: "#2C5524",
+        color: "#81933d",
         backgroundColor: [190, 220, 220, 0.75],
-        borderLineColor: "#2C5524",
+        borderLineColor: "#81933d",
         borderLineSize: 1,
         //yoffset: 5,
         font: {
-          family: "Avenir Next LT Pro", // https://developers.arcgis.com/javascript/latest/labeling/          
+          family: "Prompt", // https://developers.arcgis.com/javascript/latest/labeling/          
           style: "normal",
           weight: "normal",
           size: 10,
