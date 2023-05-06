@@ -4,8 +4,9 @@ require([
   "esri/views/MapView",
   "esri/widgets/Home",
   "esri/widgets/Locate",
-  "esri/intl",
-], (Map, CSVLayer, MapView, Home, Locate, intl) => {
+  "esri/symbols/Font",
+  "esri/intl"
+], (Map, CSVLayer, MapView, Home, Locate, Font, intl) => {
   // Sets the locale to Thai //
   intl.setLocale("th");
 
@@ -121,7 +122,7 @@ require([
         borderLineSize: 1,
         //yoffset: 5,
         font: {
-          family: "Prompt", // https://developers.arcgis.com/javascript/latest/labeling/          
+          //family: "Prompt", // https://developers.arcgis.com/javascript/latest/labeling/          
           style: "normal",
           weight: "normal",
           size: 10,
