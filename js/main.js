@@ -130,7 +130,7 @@ require([
       },
       labelPlacement: "above-center",
       labelExpressionInfo: {
-        expression: "$feature.Name"
+        expression: `Split($feature.Name, " ")[0]`
       }
     }],
     renderer: renderer,
@@ -155,7 +155,8 @@ require([
         ymax: 18.89551039339253
       },
       minZoom: 10,
-      maxZoom: 18
+      maxZoom: 18,
+      snapToZoom: false
     },
     popup: { // https://community.esri.com/thread/245768-popup-functionality-in-mobile-view //
       dockEnabled: true,
