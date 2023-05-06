@@ -120,7 +120,6 @@ require([
         backgroundColor: [190, 220, 220, 0.75],
         borderLineColor: "#81933d",
         borderLineSize: 1,
-        //yoffset: 5,
         font: {
           family: "Arial Unicode MS", // https://developers.arcgis.com/javascript/latest/labeling/          
           style: "normal",
