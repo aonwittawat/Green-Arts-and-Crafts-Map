@@ -122,7 +122,7 @@ require([
         borderLineSize: 1,
         //yoffset: 5,
         font: {
-          //family: "Prompt", // https://developers.arcgis.com/javascript/latest/labeling/          
+          family: "Arial Unicode MS", // https://developers.arcgis.com/javascript/latest/labeling/          
           style: "normal",
           weight: "normal",
           size: 10,
