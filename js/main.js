@@ -11,7 +11,7 @@ require([
   intl.setLocale("th");
 
   const sanKamphaengLayer = new GeoJSONLayer({
-    url: "https://aonwittawat.github.io/Green-Arts-and-Crafts-Map/data/SanKamphaeng.geojson", // /./data/SanKamphaeng.geojson
+    url: "./data/SanKamphaeng.geojson",
     // copyright: "Royal Thai Survey Department",
     opacity: 0.2,
     renderer: {
