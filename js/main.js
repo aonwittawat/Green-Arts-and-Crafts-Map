@@ -196,4 +196,8 @@ require([
   // Locate button //
   const locateBtn = new Locate({ view: view });
   view.ui.add(locateBtn, "top-left");
+
+  // Logo //
+  view.ui.add("logoDiv", "bottom-left");
+  
 });
