@@ -83,9 +83,9 @@ require([
       label: "6",
       symbol: {
         type: "picture-marker",
-        url: "https://static.arcgis.com/images/Symbols/Shapes/BlackStarLargeB.png",
-        width: "50px",
-        height: "50px"
+        url: "assets/icon/6.png",
+        width: "80px",
+        height: "80px"
       }
     },{
       value: "7",
