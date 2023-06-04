@@ -1,14 +1,31 @@
 require([
   "esri/Map",
+  "esri/layers/GeoJSONLayer",
   "esri/layers/CSVLayer",
   "esri/views/MapView",
   "esri/widgets/Home",
   "esri/widgets/Locate",
-  "esri/symbols/Font",
   "esri/intl"
-], (Map, CSVLayer, MapView, Home, Locate, Font, intl) => {
+], (Map, GeoJSONLayer, CSVLayer, MapView, Home, Locate, intl) => {
   // Sets the locale to Thai //
   intl.setLocale("th");
+
+  const sanKamphaengLayer = new GeoJSONLayer({
+    url: "/./data/SanKamphaeng.geojson",
+    // copyright: "Royal Thai Survey Department",
+    opacity: 0.2,
+    renderer: {
+      type: "simple",
+      symbol: {
+        type: "simple-fill",
+        color: "#81933d",
+        outline: {
+          width: 2,
+          color: "#81933d"
+        }
+      }
+    },    
+  });
 
   const renderer = {
     type: "unique-value",
@@ -137,7 +154,7 @@ require([
 
   const map = new Map({
     basemap: "gray-vector", // "satellite", "hybrid", "terrain", "oceans", "osm", "dark-gray-vector", "gray-vector", "streets-vector", "topo-vector", "streets-night-vector", "streets-relief-vector", "streets-navigation-vector"
-    layers: [csvLayer],
+    layers: [sanKamphaengLayer, csvLayer],
   });
 
   const view = new MapView({
