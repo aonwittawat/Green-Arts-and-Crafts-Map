@@ -87,15 +87,6 @@ require([
         width: "80px",
         height: "80px"
       }
-    },{
-      value: "7",
-      label: "7",
-      symbol: {
-        type: "picture-marker",
-        url: "assets/icon/7.png",
-        width: "50px",
-        height: "50px"
-      }
     }]
   };
 
