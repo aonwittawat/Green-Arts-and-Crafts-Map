@@ -102,7 +102,7 @@ require([
   const csvURL = "./data/InterestPlace.csv";
   const csvLayer = new CSVLayer({
     url: csvURL,
-    //copyright: "แผนที่นี้จัดทำโดย",
+    //copyright: "",
     popupTemplate: { // https://developers.arcgis.com/javascript/latest/sample-code/popup-multipleelements/
       title: "{Name}",
       content: [
